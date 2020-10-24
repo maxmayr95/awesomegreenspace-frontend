@@ -1,5 +1,5 @@
-# awesomegreenspace-frontend
-MakeZurich2020
+# MakeZurich2020: Awesome Green Space - Angular Frontend
+
 
 ## Including Scenario: Device is stolen. With dummy data 
 
