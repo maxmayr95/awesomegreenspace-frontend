@@ -1,0 +1,28 @@
+<div *ngIf="isStolen">
+    <span class="badge badge-danger">Device is away</span> The Device is {{meteres}}m away.
+</div>
+<div *ngIf="!isStolen">
+    <span class="badge badge-success">No problems</span>
+</div>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Temperature</th>
+        <th scope="col">Time</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bench of benchData;index as i; ">
+        <th scope="row">{{i+1}}</th>
+        <td>{{bench?.meta[0].temperature}}</td>
+        <td>{{bench?.time | date: 'dd/MM/yyyy'}}</td>
+        <td>{{bench?.gateways[0].latitude}}</td>
+        <td>{{bench?.gateways[0].longitude}}</td>
+      </tr>
+    </tbody>
+  </table>

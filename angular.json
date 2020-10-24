@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "awesomegreenspace-frontend"
+    }
+  },
+  "defaultProject": "awesomegreenspace-frontend",
+  "cli": {
+    "analytics": "173edfad-bf54-47c7-8954-408b8d9884b0"
+  }
 }
