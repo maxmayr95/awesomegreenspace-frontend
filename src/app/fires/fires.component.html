@@ -1,6 +1,7 @@
-<google-map width="100%" [center]="center">
+<google-map width="100%" height="1000px" [center]="center" [zoom]="zoom">
   <map-marker
     *ngFor="let fireplace of fireplaces"
+    
     [position]="fireplace.position"
     [label]="fireplace.label"
     [title]="fireplace.title"

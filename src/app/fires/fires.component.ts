@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class FiresComponent implements OnInit {
   @ViewChild(GoogleMap, { static: false }) map: GoogleMap
   public fireplaces:any;
+  zoom = 12;
   center: google.maps.LatLngLiteral;
   constructor(private router:Router,private http: HttpClient) {
     //set zurich bfh as standard
