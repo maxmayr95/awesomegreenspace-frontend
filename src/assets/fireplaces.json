@@ -1,0 +1,13 @@
+{
+    "fireplaces": [
+        {
+            "app_id": "awesome-green-space",
+            "device_id": "stm32-lora-max",
+            "label" : "Feuerstelle ETH 1",
+            "position": {
+                "lat": 47.409004,
+                "lng": 8.5224623
+              }
+        }
+    ]
+}

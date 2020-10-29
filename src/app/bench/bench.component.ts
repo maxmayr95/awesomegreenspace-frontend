@@ -17,7 +17,7 @@ export class BenchComponent implements OnInit {
   constructor(private benchService: BenchService, private locationService: LocationService) { }
 
   ngOnInit(): void {
-    this.benchService.getDatas().subscribe(data => {
+    this.benchService.getDatasStolen().subscribe(data => {
       this.benchData = data;
       this.isMoved = this.hasDiffrentLatLong(this.benchData);
       if (this.isMoved) {

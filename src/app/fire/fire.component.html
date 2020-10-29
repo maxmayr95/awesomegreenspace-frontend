@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Temperatur</th>
+        <th scope="col">Fäuchtigkiet</th>
+        <th scope="col">Gebraucht</th>
+        <th scope="col">Zeit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of content;index as i; ">
+        <th scope="row">{{i+1}}</th>
+        <td>{{data?.temperature}}</td>
+        <td>{{data?.humidity}}</td>
+        <td *ngIf="occupied(data?.temperature)">Besetzt <i class="fas fa-fire-alt" tile="Feuer" style="color:red;"></i></td>
+        <td *ngIf="!occupied(data?.temperature)">Frei  <i class="fas fa-fire-alt" tile="Kein Feuer"></i> </td>
+        <td>{{data?.time}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,11 @@
+<google-map width="100%" [center]="center">
+  <map-marker
+    *ngFor="let fireplace of fireplaces"
+    [position]="fireplace.position"
+    [label]="fireplace.label"
+    [title]="fireplace.title"
+    [options]=""
+    (mapClick)="openInfo(fireplace)"
+  >
+  </map-marker>
+</google-map>
